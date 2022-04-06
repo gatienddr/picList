@@ -13,7 +13,7 @@ struct picListApp: App {
 
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            PicListView()
                 .environment(\.managedObjectContext, persistenceController.container.viewContext)
         }
     }

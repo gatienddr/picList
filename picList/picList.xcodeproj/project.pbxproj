@@ -8,21 +8,28 @@
 
 /* Begin PBXBuildFile section */
 		D5FD3E6627FD7D0B008AF3BB /* picListApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5FD3E6527FD7D0B008AF3BB /* picListApp.swift */; };
-		D5FD3E6827FD7D0B008AF3BB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5FD3E6727FD7D0B008AF3BB /* ContentView.swift */; };
+		D5FD3E6827FD7D0B008AF3BB /* PicListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5FD3E6727FD7D0B008AF3BB /* PicListView.swift */; };
 		D5FD3E6A27FD7D0C008AF3BB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D5FD3E6927FD7D0C008AF3BB /* Assets.xcassets */; };
 		D5FD3E6D27FD7D0C008AF3BB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D5FD3E6C27FD7D0C008AF3BB /* Preview Assets.xcassets */; };
 		D5FD3E6F27FD7D0C008AF3BB /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5FD3E6E27FD7D0C008AF3BB /* Persistence.swift */; };
 		D5FD3E7227FD7D0C008AF3BB /* picList.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D5FD3E7027FD7D0C008AF3BB /* picList.xcdatamodeld */; };
+		D5FD3E7A27FD809A008AF3BB /* PicListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5FD3E7927FD809A008AF3BB /* PicListViewModel.swift */; };
+		D5FD3E8127FD841D008AF3BB /* ImagePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5FD3E8027FD841D008AF3BB /* ImagePickerView.swift */; };
+		D5FD3E8327FD84EA008AF3BB /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5FD3E8227FD84EA008AF3BB /* Coordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		D5FD3E6227FD7D0B008AF3BB /* picList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = picList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5FD3E6527FD7D0B008AF3BB /* picListApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = picListApp.swift; sourceTree = "<group>"; };
-		D5FD3E6727FD7D0B008AF3BB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		D5FD3E6727FD7D0B008AF3BB /* PicListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PicListView.swift; sourceTree = "<group>"; };
 		D5FD3E6927FD7D0C008AF3BB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D5FD3E6C27FD7D0C008AF3BB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		D5FD3E6E27FD7D0C008AF3BB /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		D5FD3E7127FD7D0C008AF3BB /* picList.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = picList.xcdatamodel; sourceTree = "<group>"; };
+		D5FD3E7927FD809A008AF3BB /* PicListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PicListViewModel.swift; sourceTree = "<group>"; };
+		D5FD3E7C27FD82C0008AF3BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		D5FD3E8027FD841D008AF3BB /* ImagePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerView.swift; sourceTree = "<group>"; };
+		D5FD3E8227FD84EA008AF3BB /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,8 +62,9 @@
 		D5FD3E6427FD7D0B008AF3BB /* picList */ = {
 			isa = PBXGroup;
 			children = (
+				D5FD3E7C27FD82C0008AF3BB /* Info.plist */,
+				D5FD3E7827FD8069008AF3BB /* Views */,
 				D5FD3E6527FD7D0B008AF3BB /* picListApp.swift */,
-				D5FD3E6727FD7D0B008AF3BB /* ContentView.swift */,
 				D5FD3E6927FD7D0C008AF3BB /* Assets.xcassets */,
 				D5FD3E6E27FD7D0C008AF3BB /* Persistence.swift */,
 				D5FD3E7027FD7D0C008AF3BB /* picList.xcdatamodeld */,
@@ -71,6 +79,33 @@
 				D5FD3E6C27FD7D0C008AF3BB /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		D5FD3E7827FD8069008AF3BB /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D5FD3E7D27FD83EA008AF3BB /* ImagePicker */,
+				D5FD3E7B27FD80C3008AF3BB /* PicList */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		D5FD3E7B27FD80C3008AF3BB /* PicList */ = {
+			isa = PBXGroup;
+			children = (
+				D5FD3E6727FD7D0B008AF3BB /* PicListView.swift */,
+				D5FD3E7927FD809A008AF3BB /* PicListViewModel.swift */,
+			);
+			path = PicList;
+			sourceTree = "<group>";
+		};
+		D5FD3E7D27FD83EA008AF3BB /* ImagePicker */ = {
+			isa = PBXGroup;
+			children = (
+				D5FD3E8027FD841D008AF3BB /* ImagePickerView.swift */,
+				D5FD3E8227FD84EA008AF3BB /* Coordinator.swift */,
+			);
+			path = ImagePicker;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -145,8 +180,11 @@
 			files = (
 				D5FD3E7227FD7D0C008AF3BB /* picList.xcdatamodeld in Sources */,
 				D5FD3E6F27FD7D0C008AF3BB /* Persistence.swift in Sources */,
-				D5FD3E6827FD7D0B008AF3BB /* ContentView.swift in Sources */,
+				D5FD3E7A27FD809A008AF3BB /* PicListViewModel.swift in Sources */,
+				D5FD3E6827FD7D0B008AF3BB /* PicListView.swift in Sources */,
+				D5FD3E8127FD841D008AF3BB /* ImagePickerView.swift in Sources */,
 				D5FD3E6627FD7D0B008AF3BB /* picListApp.swift in Sources */,
+				D5FD3E8327FD84EA008AF3BB /* Coordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,11 +316,13 @@
 				DEVELOPMENT_TEAM = W5GL4YVL8D;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = picList/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -307,11 +347,13 @@
 				DEVELOPMENT_TEAM = W5GL4YVL8D;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = picList/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
