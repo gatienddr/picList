@@ -30,7 +30,7 @@ struct PicListView: View {
                     NavigationLink {
                         VStack{
                             Text(pics.title!)
-                            Text("Hello")
+                            Image(uiImage: UIImage(data: pics.storedImage!)!)
                         }
                         
                     } label: {
