@@ -9,11 +9,16 @@ import SwiftUI
 
 @main
 struct picListApp: App {
+    
     let persistenceController = PersistenceController.shared
-
+    
     var body: some Scene {
         WindowGroup {
-            PicListView()
+            
+            PicListView(PicListViewModel(persistenceController.container.viewContext))
+                .onAppear{
+                    
+                }
                 .environment(\.managedObjectContext, persistenceController.container.viewContext)
         }
     }
